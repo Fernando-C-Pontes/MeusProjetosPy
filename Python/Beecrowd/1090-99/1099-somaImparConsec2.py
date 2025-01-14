@@ -6,12 +6,14 @@ def somaImpares(inicio, fim):
     
     return soma
 
-def main():
-    X, Y = int(input()), int(input())
 
-    if X > Y:
-        print(somaImpares(Y, X))
-    else:
+def main():
+    N = int(input())
+
+    for _ in range(N):
+        X, Y = map(int, input().split())
+        if X > Y:
+            X, Y = Y, X    
         print(somaImpares(X, Y))
 
 if __name__ == "__main__":
