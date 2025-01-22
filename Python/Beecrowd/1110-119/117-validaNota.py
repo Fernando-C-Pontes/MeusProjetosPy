@@ -8,7 +8,7 @@ def main():
             somaNotas += nota
             contNotas += 1
     
-    print(f"{somaNotas/2:.2f}")
+    print(f"media = {somaNotas/2:.2f}")
 
 if __name__ == "__main__":
     main()
